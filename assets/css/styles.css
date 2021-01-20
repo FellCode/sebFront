@@ -9,6 +9,7 @@
 html {
 	font: normal 16px sans-serif;
 	color: #555;
+	scroll-behavior: smooth;
 }
 img{
 	width: 150px;
@@ -167,6 +168,10 @@ header nav li {
 
 	header h2 {
 		margin-bottom: 15px;
+	}
+	
+	header h3 {
+		margin-bottom: 20px;
 	}
 }
 
