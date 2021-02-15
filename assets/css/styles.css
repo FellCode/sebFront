@@ -288,7 +288,7 @@ header nav li {
 
 .about .grid li i {
 	color: #1f7a1f70;
-	transition: all .5s ease-in-out;
+	transition: transform .5s ease-in-out;
 }
 
 .about .grid li i:hover {
