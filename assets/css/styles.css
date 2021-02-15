@@ -272,10 +272,6 @@ header nav li {
 	padding: 50px;
 	flex-basis: 50%;
 	text-align: center;
-	
-	
-	
-	
 }
 
 .grid {
@@ -295,7 +291,7 @@ header nav li {
 .about .grid li i:hover {
 	transform: scale(1.3);
 	-ms-transform: scale (1.3);
-	-webkit-transform:scale(1.3);
+	-webkit-transform:scale(1.3,1.3);
 	-moz-transform: scale(1.3);
 	-o-transform: scale(1.3);
 	cursor: pointer;
