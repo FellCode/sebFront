@@ -19,9 +19,9 @@ function scrollFunction() {
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
-    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("backToTopBtn").style.display = "block";
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("backToTopBtn").style.display = "none";
   }
 }
 

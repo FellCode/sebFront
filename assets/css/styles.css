@@ -354,14 +354,36 @@ header nav li {
 	margin-top:15px;
 }
 
+#contactFlexContainer
+{
+	display:flex;
+	align-items: center;
+	
+}
 
-
+#contactData{
+	max-width: 50%;
+	text-align: center;
+	margin: 0 100px;
+}
 @media (max-width: 1000px) {
 	.contact form input {
 		flex-basis: 100%;
 		margin: 0 0 20px 0;
 	}
 }
+
+#map{
+	border: 7px solid ;
+	border-color: #1f7a1f70;
+	margin-top:10px;
+}
+
+@media (max-width: 900px) {
+	#contactFlexContainer{
+		flex-direction: column;
+		
+	}
 
 
 /*Footer Section*/
