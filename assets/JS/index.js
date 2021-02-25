@@ -31,6 +31,16 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+function myFunction() {
+  var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 $(function() {
   // contact form animations
   $("#contactform").click(function() {
