@@ -146,13 +146,13 @@
 	border-color: #1f7a1f70;
 	margin-top:10px;
 	height:350px;
-	height:350px;
+	width:350px;
 }
 
 
 @media(max-width: 800px){
 	#map{
-		width: 90%
+		width: 80%
 	}
 }
 
