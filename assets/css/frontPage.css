@@ -145,6 +145,15 @@
 	border: 7px solid ;
 	border-color: #1f7a1f70;
 	margin-top:10px;
+	height:350px;
+	height:350px;
+}
+
+
+@media(max-width: 800px){
+	#map{
+		width: 90%
+	}
 }
 
 @media (max-width: 900px) {
