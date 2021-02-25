@@ -223,15 +223,11 @@ header nav li {
 	}
 
 	.hero h1 {
-		font-size: 48px;
+		font-size: 36px;
 	}
 
 	.hero h3 {
 		font-size: 24px;
-	}
-
-	.hero a.btn {
-		padding: 15px 40px;
 	}
 }
 
