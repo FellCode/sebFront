@@ -1,0 +1,7 @@
+@import url("base.css");
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    
+}
