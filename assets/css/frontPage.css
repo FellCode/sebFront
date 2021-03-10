@@ -224,3 +224,8 @@
   img:nth-child(4) {
 	animation-delay: 15s;
   }
+
+  .bottom-center {
+	  position:absolute;
+	  top:95%;
+  }

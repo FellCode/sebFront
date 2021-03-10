@@ -12,6 +12,7 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction();
+  scrollArrow();
 };
 
 function scrollFunction() {
@@ -23,6 +24,19 @@ function scrollFunction() {
   } else {
     document.getElementById("backToTopBtn").style.display = "none";
   }
+}
+
+
+function scrollArrow() {
+  const checkpoint = 300;
+  const currentScroll = window.pageYOffset;
+  console.log(currentScroll);
+  if (currentScroll <= checkpoint) {
+    opacity = 1 - currentScroll / checkpoint;
+  } else {
+    opacity = 0;
+  }
+  document.getElementById("scrollIndicator").style.opacity = opacity;
 }
 
 // When the user clicks on the button, scroll to the top of the document
