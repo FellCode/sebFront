@@ -12,12 +12,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-img{
+.vorstand .quote img{
 	width: 150px;
 	height: 150px;
 	border: 10px solid ;
 	border-color: #1f7a1f70;
-	float:left;
 	margin-right:10px;
 	border-radius:50%;
 	-webkit-border-radius:50%;
