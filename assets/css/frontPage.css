@@ -206,11 +206,11 @@
   
   .pic-ctn > img {
 	position: absolute;
-	width: 300px;
+	width: 500px;
 	height: 300px;
 	object-fit: cover;
 	top: 0;
-	left: calc(50% - 150px);
+	left: calc(50% - 250px);
 	opacity: 0;
 	animation: display 20s infinite;
   }
