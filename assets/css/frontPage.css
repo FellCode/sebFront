@@ -37,9 +37,11 @@
 /*about Section*/
 
 .about .grid li {
-	padding: 50px;
-	flex-basis: 50%;
+	margin: 20px;
+	flex-basis: 40%;
 	text-align: center;
+	box-shadow:5px 7px 34px rgba(158, 158, 158, 0.39);
+	border-radius: 2%;
 }
 
 .grid {
@@ -52,22 +54,18 @@
 
 .about .grid li i {
 	color: #1f7a1f70;
-	transition: transform .5s ease-in-out;
 
-}
-
-.about .grid li i:hover {
-	transform: scale(1.3);
-	-ms-transform: scale (1.3);
-	-webkit-transform:scale(1.3,1.3);
-	-moz-transform: scale(1.3);
-	-o-transform: scale(1.3);
-	cursor: pointer;
 }
 
 .about .grid a {
 	color:inherit;
 	opacity: inherit;
+	display:block;
+	padding: 50px;
+}
+
+.about .grid a:hover {
+	cursor:pointer;
 }
 
 .about .grid li h4 {
@@ -228,4 +226,14 @@
   .bottom-center {
 	  position:absolute;
 	  top:95%;
+  }
+
+  #erwVorstand {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+  }
+
+  #erwVorstand li {
+	  padding-top: 5px;
   }
