@@ -1,3 +1,10 @@
+let currentImgIndex = 0;
+const images = [
+  "url('../assets/img/main/impression1.jpg')",
+  "url('../assets/img/main/impression2.jpg')",
+  "url('../assets/img/main/impression3.jpg')",
+  ]
+
 $(document).on("click", 'a[href^="#"]', function(event) {
   event.preventDefault();
 
@@ -11,7 +18,6 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 
 window.onscroll = function() {
   scrollFunction();
-  scrollArrow();
 };
 
 function scrollFunction() {
@@ -26,17 +32,7 @@ function scrollFunction() {
 }
 
 
-function scrollArrow() {
-  const checkpoint = 300;
-  const currentScroll = window.pageYOffset;
-  console.log(currentScroll);
-  if (currentScroll <= checkpoint) {
-    opacity = 1 - currentScroll / checkpoint;
-  } else {
-    opacity = 0;
-  }
-  document.getElementById("scrollIndicator").style.opacity = opacity;
-}
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -52,6 +48,64 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
+}
+
+
+function nextImage(){
+
+
+  let backgroundImage = document.getElementById("schiessSportImg");
+  let mainText = document.getElementById("mainText");
+  let summaryText = document.getElementById("summaryText");
+  let dataText = document.getElementById("dataText");
+
+  currentImgIndex++;
+  if(currentImgIndex > images.length -1)
+    currentImgIndex = 0;
+
+  backgroundImage.style.backgroundImage = images[currentImgIndex]
+  
+
+
+  if(currentImgIndex === 0 ){
+    mainText.classList.add("visible")
+    mainText.classList.remove("hidden")
+    summaryText.classList.remove("visible")
+    summaryText.classList.add("hidden")
+    dataText.classList.remove("visible")
+    dataText.classList.add("hidden")
+
+  }
+  else if(currentImgIndex === 1){
+    mainText.classList.add("hidden")
+    mainText.classList.remove("visible")
+    summaryText.classList.add("visible")
+    summaryText.classList.remove("hidden")
+    dataText.classList.remove("visible")
+    dataText.classList.add("hidden")
+  }
+
+  else {
+    mainText.classList.add("hidden")
+    mainText.classList.remove("visible")
+    summaryText.classList.remove("visible")
+    summaryText.classList.add("hidden")
+    dataText.classList.remove("hidden")
+    dataText.classList.add("visible")
+  }
+  
+}
+
+
+function previousImage(){
+  var backgroundImage = document.getElementById("schiessSportImg");
+
+  currentImgIndex--;
+  if(currentImgIndex < 0)
+    currentImgIndex = images.length-1;
+  
+  backgroundImage.style.backgroundImage = images[currentImgIndex]
+  
 }
 
 $(function() {
