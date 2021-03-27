@@ -59,7 +59,7 @@ strong{
     position: absolute;
     bottom: 60px;
     right: 60px;
-    background-color: #83cea573;
+    background-color: rgba(68, 78, 64, 0.8);
     border-radius: 4px;
     line-height: 1.5;
     padding: 20px;
@@ -90,7 +90,7 @@ strong{
     position: absolute;
     top: 100px;
     left: 50px;
-    background-color: #83cea573;
+    background-color: rgba(68, 78, 64, 0.8);
     border-radius: 4px;
     padding:15px;
     

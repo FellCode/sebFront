@@ -157,17 +157,58 @@ header nav li {
 @media (max-width: 800px) {
 	header nav{
 		display:none;
+		width: 100%;
+		margin: 0;
+		padding:0;
 	}
 
+	header nav li {
+		align-self: center;
+		text-align: center;
+		border: 1px solid grey;
+		background-color: #83cea5;
+		
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin:0;	
+	}
+
+	header nav li a {
+		color:#555;
+	}
+
+
 	header {
-		padding: 40px;
+		flex-direction: column;
 	}
 
 	#burgermenu {
 		display:flex;
+		margin-left: auto;
 	}
+
+	#socialText {
+		display:flex;
+	}
+	
+	header {
+		padding: 0;
+		margin: 0;
+	}
+
+	.titleContainer {
+		padding:20px;
+		display:flex;
+		flex-direction: row;
+		width:100%
+	}
+
 }
 
+
+.visible{
+	display:block;
+}
 /*Hero Styles*/
 
 .hero {

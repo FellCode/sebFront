@@ -34,19 +34,22 @@ Section
 
 <body>
   <header>
-    <h4>Besuch uns auch auf: <a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/" target="_blank"><i class="fab fa-facebook-square"></i></a>   <a href="#"><i class="fab fa-instagram "></i></a></li></h4>
-    <nav>
-      <li><strong><a href="#about">Über uns</a></strong></li>
-      <li><strong><a href="#eindruecke">Eindrücke</a></strong></li>
-      <li><strong><a href="#vorstand">Vorstand</a></strong></li>
-      <li><strong><a href="#contact">Kontakt</a></strong></li>
-      <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
-      <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li>
+    <div class="titleContainer">
+      <a id="burgermenu" href="javascript:void(0);" onclick="mobileMenu()" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <nav id="nav-menu">
+        <li><strong><a href="#about">Über uns</a></strong></li>
+        <li><strong><a href="#eindruecke">Eindrücke</a></strong></li>
+        <li><strong><a href="#vorstand">Vorstand</a></strong></li>
+        <li><strong><a href="#contact">Kontakt</a></strong></li>
+        <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
+        <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li>
+
     </nav>
 
-    <a id="burgermenu" href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+   
   </header>
 
 
@@ -56,6 +59,8 @@ Section
       <h3>Willkommen bei der</h3>
       <h1>St. Sebastianus Schützenbruderschaft Horrem<br> seit 1550 e.V.</h1>
     </div>
+    <h4 class="socialText">Besuch uns auch auf: <a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/" target="_blank"><i class="fab fa-facebook-square"></i></a>   <a href="#"><i class="fab fa-instagram "></i></a></li></h4>
+
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
 
@@ -225,4 +230,13 @@ Section
       </ul>
     </footer>
   </body>
+
+
+  <script>
+
+  function mobileMenu() {
+      let nav = document.getElementById("nav-menu")
+      nav.classList.toggle("visible");    
+  }
+  </script>
 </html>
