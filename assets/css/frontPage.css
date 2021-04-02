@@ -2,6 +2,24 @@
 
 /*Greetings Section */
 
+.socialText{
+	position: absolute;
+	bottom: 15px;
+	left:15px;
+	font-size: 1.2em;
+}
+
+.socialText i {
+	font-size: 1.3em;
+}
+
+@media (max-width: 800px){
+	.socialText{
+		position:unset;
+		
+	}
+}
+
 /*Eindruecke Section*/
 
 .eindruecke .grid li {
@@ -89,6 +107,21 @@
 	margin: 40px 0 25px;
 }
 
+.vorstand .quote img{
+	width: 150px;
+	height: 150px;
+	border: 10px solid ;
+	border-color: #1f7a1f70;
+	margin-right:10px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+}
+
+
+
 @media (max-width: 800px) {
 	.vorstand .quote {
 		font-size: 18px;
@@ -108,6 +141,21 @@
 .img-left{
 	float:left;
 }
+
+
+#erwVorstand {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 40px 0 25px;
+	width:90%;
+	border: 5px solid #83cea5;
+    padding: 10px;
+  }
+
+  #erwVorstand li {
+	  padding-top: 5px;
+  }
 
 /*Contact Section*/
 
@@ -226,14 +274,4 @@
   .bottom-center {
 	  position:absolute;
 	  top:95%;
-  }
-
-  #erwVorstand {
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 1.5;
-  }
-
-  #erwVorstand li {
-	  padding-top: 5px;
   }
