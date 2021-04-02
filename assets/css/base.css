@@ -47,6 +47,11 @@ a.btn {
 	opacity: 1;
 }
 
+.bottom-center {
+	position:absolute;
+	top:95%;
+}
+
 
 
 

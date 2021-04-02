@@ -1,6 +1,4 @@
-window.onscroll = function() {
-    scrollArrow();
-}
+
 
 
 function scrollArrow() {

@@ -20,6 +20,10 @@
 	}
 }
 
+section.greetings h3.title{
+	text-transform: none;
+} 
+
 /*Eindruecke Section*/
 
 .eindruecke .grid li {
@@ -271,7 +275,6 @@
 	animation-delay: 15s;
   }
 
-  .bottom-center {
-	  position:absolute;
-	  top:95%;
-  }
+
+
+

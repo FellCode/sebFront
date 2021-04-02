@@ -1,23 +1,13 @@
 let currentImgIndex = 0;
 const images = [
-  "url('../assets/img/main/impression1.jpg')",
-  "url('../assets/img/main/impression2.jpg')",
-  "url('../assets/img/main/impression3.jpg')",
+  "url('../assets/img/schiesssport/schiesssport1.jpg')",
+  "url('../assets/img/schiesssport/schiesssport2.jpg')",
+  "url('../assets/img/schiesssport/schiesssport3.jpg')",
   ]
-
-$(document).on("click", 'a[href^="#"]', function(event) {
-  event.preventDefault();
-
-  $("html, body").animate(
-    {
-      scrollTop: $($.attr(this, "href")).offset().top
-    },
-    500
-  );
-});
 
 window.onscroll = function() {
   scrollFunction();
+  scrollArrow();
 };
 
 function scrollFunction() {
@@ -105,6 +95,34 @@ function previousImage(){
     currentImgIndex = images.length-1;
   
   backgroundImage.style.backgroundImage = images[currentImgIndex]
+
+
+  if(currentImgIndex === 0 ){
+    mainText.classList.add("visible")
+    mainText.classList.remove("hidden")
+    summaryText.classList.remove("visible")
+    summaryText.classList.add("hidden")
+    dataText.classList.remove("visible")
+    dataText.classList.add("hidden")
+
+  }
+  else if(currentImgIndex === 1){
+    mainText.classList.add("hidden")
+    mainText.classList.remove("visible")
+    summaryText.classList.add("visible")
+    summaryText.classList.remove("hidden")
+    dataText.classList.remove("visible")
+    dataText.classList.add("hidden")
+  }
+
+  else {
+    mainText.classList.add("hidden")
+    mainText.classList.remove("visible")
+    summaryText.classList.remove("visible")
+    summaryText.classList.add("hidden")
+    dataText.classList.remove("hidden")
+    dataText.classList.add("visible")
+  }
   
 }
 
