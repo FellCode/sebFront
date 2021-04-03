@@ -1,8 +1,8 @@
 let currentImgIndex = 0;
 const images = [
-  "url('../assets/img/schiesssport/schiesssport1.jpg')",
-  "url('../assets/img/schiesssport/schiesssport2.jpg')",
-  "url('../assets/img/schiesssport/schiesssport3.jpg')",
+  "url('../assets/img/schiesssport/schiesssport1.jpeg')",
+  "url('../assets/img/schiesssport/schiesssport2.jpeg')",
+  "url('../assets/img/schiesssport/schiesssport3.jpeg')",
   ]
 
 window.onscroll = function() {
