@@ -318,3 +318,15 @@ footer p {
 #backToTopBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+
+.gallery-cell {
+	width: 66%;
+	max-height: 600px;
+	margin-right: 10px;
+	counter-increment: gallery-cell;
+	
+  }
+
+  .gallery-cell img {
+	max-width: 100%;
+}

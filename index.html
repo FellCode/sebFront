@@ -23,10 +23,12 @@ Section
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="assets/css/frontPage.css">
   <link rel="stylesheet" href="assets/css/form.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <script src="assets/JS/index.js"></script>
   <script src="assets/JS/scrollIndicator.js"></script>
@@ -144,17 +146,18 @@ Section
 
   <section class="eindruecke" id="eindruecke">
     <h3 class="title">Eindrücke unseres Alltags:</h3>
-    <hr>
+    <hr class="center">
 
-    <div class="pic-ctn">
-      <img src="assets/img/main/impression1.jpg" alt="" class="pic">
-      <img src="assets/img/main/impression2.jpg" alt="" class="pic">
-      <img src="assets/img/main/impression3.jpg" alt="" class="pic">
-      <img src="assets/img/main/impression4.jpg" alt="" class="pic">
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay":true}'>
+      <div class="gallery-cell"><img src="assets/img/main/impression2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression3.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression4.jpg" alt=""></div>
     </div>
-
-    <p>Weitere Bilder findest und auf unserem <a target="_blank" href="https://www.instagram.com">Instagram</a></p>
-
+    <div>
+      <p class="center">Weitere Bilder findest und auf unserem <a target="_blank" href="https://www.instagram.com">Instagram</a></p>
+    </div>
   </section>
 
   <section class="vorstand" id="vorstand">

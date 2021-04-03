@@ -26,35 +26,7 @@ section.greetings h3.title{
 
 /*Eindruecke Section*/
 
-.eindruecke .grid li {
-	height: 350px;
-	padding: 20px;
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-}
 
-.eindruecke .grid li.small {
-	flex-basis: 30%;
-}
-
-.eindruecke .grid li.large {
-	flex-basis: 70%;
-}
-
-@media (max-width: 1100px) {
-	.eindruecke .grid li.small,
-	.eindruecke .grid li.large {
-		flex-basis: 50%;
-	}
-}
-
-@media (max-width: 800px) {
-	.eindruecke .grid li.small,
-	.eindruecke .grid li.large {
-		flex-basis: 100%;
-	}
-}
 
 /*about Section*/
 
@@ -277,4 +249,14 @@ section.greetings h3.title{
 
 
 
+  .eindruecke {
+	  display:block;
+  }
 
+
+
+
+
+.center {
+	margin: 20px auto;
+}
