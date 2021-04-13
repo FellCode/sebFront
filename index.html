@@ -1,19 +1,5 @@
-<!-- Rückfragen :
-Begrüßung sehr förmlich mit "Sie" und "Lieber Gast"
-Timeline nutzen um entweder die Majestäten darzustellen oder um die Texte aufzubrechen?
-Unterseiten gleichen Grundlayout?
-Jugend Text passt besser in Traditionsabschnitt oder als Unterpunkt "Geschichte der Jungend"
-Zusätzlich sollten dann aktuelle Dinge hervorgehoben (Was schießen, wann schießen?, Ausflüge, Aktionen, Betreuung)
-
-
-Hero (Titel+ Passendes Bild)
-Section
-
--->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
@@ -28,13 +14,14 @@ Section
   <link rel="stylesheet" href="assets/css/form.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <script src="assets/JS/index.js"></script>
   <script src="assets/JS/scrollIndicator.js"></script>
 </head>
 
 <body>
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
   <header>
     <div class="titleContainer">
       <a id="burgermenu" href="javascript:void(0);" onclick="mobileMenu()" class="icon">
@@ -48,12 +35,8 @@ Section
       <li><strong><a href="#contact">Kontakt</a></strong></li>
       <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
       <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li>
-
     </nav>
-
-
   </header>
-
 
   <section class="hero">
     <div class="background-image" style="background-image: url(assets/img/main/hero.jpg);"></div>
@@ -68,9 +51,6 @@ Section
 
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
-
-  <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
 
   <section class="greetings" id="greetings">
     <h3 class="title">Herzlich Willkommen bei den St. Sebastianus Schützen</h3>
@@ -93,7 +73,6 @@ Section
     <p>Bei uns gibt eine ganze Reihe von Aktivitäten und Aufgaben. Hier findest du einen Ausschnitt davon was wir alles
       bieten können <br /><br />
       <hr>
-
       <ul class="grid">
         <li>
           <a href="./pages/gemeinschaft.html">
@@ -112,7 +91,6 @@ Section
               aktiv
               daran teilnehmen und viel Spaß dabei haben!</p>
           </a>
-
         </li>
         <li>
           <a href="./pages/schiesssport.html">
@@ -120,7 +98,6 @@ Section
             <h4>Sportschießen</h4>
             <p>Ob Luftgewehr, Kleinkaliber, Pistole oder das Lasergewehr für die Kinder. Es ist für alle was dabei.</p>
           </a>
-
         </li>
         <li>
           <a href="./pages/jugend.html">
@@ -130,8 +107,6 @@ Section
               diverse Ausflüge, bieten Betreuung und Unterstützung an, und bringen näher, Verantwortung zu übernehmen
             </p>
           </a>
-
-
         </li>
         <li>
           <a href="./pages/vermietung.html">
@@ -149,14 +124,15 @@ Section
     <hr class="center">
 
     <div class="gallery js-flickity"
-      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay":true}'>
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay": 6000}'>
       <div class="gallery-cell"><img src="assets/img/main/impression2.jpg" alt=""></div>
       <div class="gallery-cell"><img src="assets/img/main/impression1.jpg" alt=""></div>
       <div class="gallery-cell"><img src="assets/img/main/impression3.jpg" alt=""></div>
       <div class="gallery-cell"><img src="assets/img/main/impression4.jpg" alt=""></div>
     </div>
     <div>
-      <p class="center">Weitere Bilder findest und auf unserem <a target="_blank" href="https://www.instagram.com">Instagram</a></p>
+      <p class="center">Weitere Bilder findest und auf unserem <a target="_blank"
+          href="https://www.instagram.com">Instagram</a></p>
     </div>
   </section>
 
@@ -247,7 +223,6 @@ Section
     </ul>
   </footer>
 </body>
-
 
 <script>
   function mobileMenu() {

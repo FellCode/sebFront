@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
@@ -7,17 +7,21 @@
   <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="../assets/css/vermietungPage.css">
-
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="../assets/JS/index.js"></script>
+  <script src="../assets/JS/scrollIndicator.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
-      <li><strong><a href="../index.html"><i class="fas fa-arrow-left"></i>    Zur Hauptseite</a></strong></li>
+      <li><strong><a href="../index.html"><i class="fas fa-arrow-left"></i> Zur Hauptseite</a></strong></li>
     </nav>
   </header>
 
@@ -28,33 +32,56 @@
     <div class="hero-content-area">
       <h3>Vermietung unseres Schützenheims</h3>
     </div>
+    <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
   <section class="vermietung" id="vermietung">
     <h3 class="title">Unser Schützenheim</h3>
     <hr>
-    <p>Unser Heim kann man mieten! Sei es für eine Versammlung Ihres Vereins oder Firma, Ihrem Geburtstag, ein Jubiläum oder vielleicht dem schönsten Tag des Lebens – Ihre Hochzeit. Sehr gerne können Sie unsere Räumlichkeiten für Ihren Anlass mieten.</p>
+    <p>Unser Heim kann man mieten! Sei es für eine Versammlung Ihres Vereins oder Firma, Ihrem Geburtstag, ein Jubiläum
+      oder vielleicht dem schönsten Tag des Lebens – Ihre Hochzeit. Sehr gerne können Sie unsere Räumlichkeiten für
+      Ihren Anlass mieten.</p>
 
-    <p class="description"><img class="img-left"  src="../assets/img/vermietung/vermietung1.jpg" /><img class="img-right grow" src="../assets/img/vermietung/vermietung2.jpg" />Für kleinere Zusammenkünfte bis ungefähr 20 – 25 Personen mieten Sie doch einfach unseren urig gemütlichen Schankraum. Ausgestattet mit ausreichend Kühlmöglichkeiten für Ihre Getränke, eine moderne Co² Zapfanlage und ausreichend Sitzgelegenheiten für Ihre Gäste, lädt er zu ein paar frohen Stunden ein. </p>
-    <p class="description"> Das Buffet für Ihre Gäste können Sie ganz einfach im Foyer unseres Schützenheims aufstellen. </p>
-    <p class="description"><img class= "img-left grow" src="../assets/img/vermietung/vermietung3.jpg" /><img class="img-right grow" src="../assets/img/vermietung/vermietung4.jpg" />Und haben Sie mal ein paar mehr Gäste,
-      stehen Ihnen der große Saal unseres Heims sehr gerne zur Verfügung. In unserem Saal können Sie bequem mit 70 – 80 Personen
-      (Sitzplätze) feiern, und haben auch noch Platz für eine Tanzfläche und das Buffet. Bei voller Bestuhlung z.B. für eine 
-      Versammlung finden 100 Personen hier Platz. Bei der Anmietung des Saals steht Ihnen auch automatisch unsere Schänke zur 
+    <p class="description">Für kleinere Zusammenkünfte bis ungefähr 20 – 25 Personen mieten Sie doch einfach unseren
+      urig gemütlichen Schankraum. Ausgestattet mit ausreichend Kühlmöglichkeiten für Ihre Getränke, eine moderne Co²
+      Zapfanlage und ausreichend Sitzgelegenheiten für Ihre Gäste, lädt er zu ein paar frohen Stunden ein. </p>
+    <p class="description"> Das Buffet für Ihre Gäste können Sie ganz einfach im Foyer unseres Schützenheims aufstellen.
+    </p>
+    <p class="description">Und haben Sie mal ein paar mehr Gäste,
+      stehen Ihnen der große Saal unseres Heims sehr gerne zur Verfügung. In unserem Saal können Sie bequem mit 70 – 80
+      Personen
+      (Sitzplätze) feiern, und haben auch noch Platz für eine Tanzfläche und das Buffet. Bei voller Bestuhlung z.B. für
+      eine
+      Versammlung finden 100 Personen hier Platz. Bei der Anmietung des Saals steht Ihnen auch automatisch unsere
+      Schänke zur
       Nutzung zur Verfügung. </p>
-    <p class="description">Egal ob Schankraum oder großer Saal, für die Durchführung Ihrer Veranstaltung halten 
-      wir einheitliches Geschirr und Gläser für bis zu 100 Personen bereit. Gerne unterstützen wir Sie auch mit unserer Erfahrung zu Dekoration und Aufteilung der 
-      Sitzgelegenheiten und geben Ihnen unsere Kontakte zu Caterer und unserem „Haus und Hof“ Getränkelieferanten – <a href="http://www.getraenke-geuer.de" target="_blank" >Getränk Geuer</a> – weiter. Sprechen Sie uns einfach an!</p>
-    <p class="description">Wenn Sie sich ihr  Fest ins unseren Räumlichkeiten vorstellen können, 
-      dann melden Sie sich einfach per E-Mail bei uns. Wir sprechen dann einen Termin ab, damit Sie sich einmal unsere Räumlichkeiten vor Ort anschauen können und wir uns 
+    <p class="description">Egal ob Schankraum oder großer Saal, für die Durchführung Ihrer Veranstaltung halten
+      wir einheitliches Geschirr und Gläser für bis zu 100 Personen bereit. Gerne unterstützen wir Sie auch mit unserer
+      Erfahrung zu Dekoration und Aufteilung der
+      Sitzgelegenheiten und geben Ihnen unsere Kontakte zu Caterer und unserem „Haus und Hof“ Getränkelieferanten – <a
+        href="http://www.getraenke-geuer.de" target="_blank">Getränk Geuer</a> – weiter. Sprechen Sie uns einfach an!
+    </p>
+    <p class="description">Wenn Sie sich ihr Fest ins unseren Räumlichkeiten vorstellen können,
+      dann melden Sie sich einfach per E-Mail bei uns. Wir sprechen dann einen Termin ab, damit Sie sich einmal unsere
+      Räumlichkeiten vor Ort anschauen können und wir uns
       zu Ihrer Veranstaltung austauschen können! </p>
+  </section>
+  <section class="vermietungBilder" id="vermietungBilder">
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
+    </div>
   </section>
 
   <footer>
     <p>&copy; <a href="http://fellcode.me">Felix Vogel</a></p>
-      <ul>
-        <li><a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-      </ul>
-    </footer>
-  </body>
+    <ul>
+      <li><a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/" target="_blank"><i
+            class="fab fa-facebook-square fa-2x"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>

@@ -1,11 +1,11 @@
 @import url("base.css");
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-h2{
-    margin-top:40px;
+h2 {
+    margin-top: 40px;
 }

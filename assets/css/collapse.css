@@ -1,6 +1,6 @@
 .wrap-collabsible {
   margin: 1.2rem;
-  
+
 }
 
 input[type='checkbox'] {
@@ -46,7 +46,7 @@ input[type='checkbox'] {
   -o-transition: transform .2s ease-out;
 }
 
-.toggle:checked + .lbl-toggle::before {
+.toggle:checked+.lbl-toggle::before {
   transform: rotate(90deg) translateX(-3px);
 }
 
@@ -56,11 +56,11 @@ input[type='checkbox'] {
   transition: max-height .25s ease-in-out;
 }
 
-.toggle:checked + .lbl-toggle + .collapsible-content {
+.toggle:checked+.lbl-toggle+.collapsible-content {
   max-height: 900px;
 }
 
-.toggle:checked + .lbl-toggle {
+.toggle:checked+.lbl-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }

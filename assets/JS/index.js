@@ -3,9 +3,9 @@ const images = [
   "url('../assets/img/schiesssport/schiesssport1.jpeg')",
   "url('../assets/img/schiesssport/schiesssport2.jpeg')",
   "url('../assets/img/schiesssport/schiesssport3.jpeg')",
-  ]
+]
 
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
   scrollArrow();
 };
@@ -41,7 +41,7 @@ function myFunction() {
 }
 
 
-function nextImage(){
+function nextImage() {
 
 
   let backgroundImage = document.getElementById("schiessSportImg");
@@ -50,14 +50,14 @@ function nextImage(){
   let dataText = document.getElementById("dataText");
 
   currentImgIndex++;
-  if(currentImgIndex > images.length -1)
+  if (currentImgIndex > images.length - 1)
     currentImgIndex = 0;
 
   backgroundImage.style.backgroundImage = images[currentImgIndex]
-  
 
 
-  if(currentImgIndex === 0 ){
+
+  if (currentImgIndex === 0) {
     mainText.classList.add("visible")
     mainText.classList.remove("hidden")
     summaryText.classList.remove("visible")
@@ -65,17 +65,14 @@ function nextImage(){
     dataText.classList.remove("visible")
     dataText.classList.add("hidden")
 
-  }
-  else if(currentImgIndex === 1){
+  } else if (currentImgIndex === 1) {
     mainText.classList.add("hidden")
     mainText.classList.remove("visible")
     summaryText.classList.add("visible")
     summaryText.classList.remove("hidden")
     dataText.classList.remove("visible")
     dataText.classList.add("hidden")
-  }
-
-  else {
+  } else {
     mainText.classList.add("hidden")
     mainText.classList.remove("visible")
     summaryText.classList.remove("visible")
@@ -83,21 +80,21 @@ function nextImage(){
     dataText.classList.remove("hidden")
     dataText.classList.add("visible")
   }
-  
+
 }
 
 
-function previousImage(){
+function previousImage() {
   var backgroundImage = document.getElementById("schiessSportImg");
 
   currentImgIndex--;
-  if(currentImgIndex < 0)
-    currentImgIndex = images.length-1;
-  
+  if (currentImgIndex < 0)
+    currentImgIndex = images.length - 1;
+
   backgroundImage.style.backgroundImage = images[currentImgIndex]
 
 
-  if(currentImgIndex === 0 ){
+  if (currentImgIndex === 0) {
     mainText.classList.add("visible")
     mainText.classList.remove("hidden")
     summaryText.classList.remove("visible")
@@ -105,17 +102,14 @@ function previousImage(){
     dataText.classList.remove("visible")
     dataText.classList.add("hidden")
 
-  }
-  else if(currentImgIndex === 1){
+  } else if (currentImgIndex === 1) {
     mainText.classList.add("hidden")
     mainText.classList.remove("visible")
     summaryText.classList.add("visible")
     summaryText.classList.remove("hidden")
     dataText.classList.remove("visible")
     dataText.classList.add("hidden")
-  }
-
-  else {
+  } else {
     mainText.classList.add("hidden")
     mainText.classList.remove("visible")
     summaryText.classList.remove("visible")
@@ -123,15 +117,15 @@ function previousImage(){
     dataText.classList.remove("hidden")
     dataText.classList.add("visible")
   }
-  
+
 }
 
-$(function() {
+$(function () {
   // contact form animations
-  $("#contactform").click(function() {
+  $("#contactform").click(function () {
     $("#contactFormContainer").fadeToggle();
   });
-  $(document).mouseup(function(e) {
+  $(document).mouseup(function (e) {
     var container = $("#contactFormContainer");
 
     if (
@@ -143,4 +137,3 @@ $(function() {
     }
   });
 });
-

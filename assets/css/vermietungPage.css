@@ -14,26 +14,35 @@
 	}
 }
 
-.img-right{
-	float:right;
-    border-radius: 0%;
-    width: 200px;
+.img-right {
+	float: right;
+	border-radius: 0%;
+	width: 200px;
 	height: 200px;
-    margin: 10px;
-    border: 5px solid ;
-    border-color: #1f7a1f70;
+	margin: 10px;
+	border: 5px solid;
+	border-color: #1f7a1f70;
 }
 
 
-.img-left{
-	float:left;
-    border-radius: 0%;
-    width: 200px;
+.img-left {
+	float: left;
+	border-radius: 0%;
+	width: 200px;
 	height: 200px;
-    margin: 10px;
-    border: 5px solid ;
-    border-color: #1f7a1f70;
+	margin: 10px;
+	border: 5px solid;
+	border-color: #1f7a1f70;
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(3); }
+.grow {
+	transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(3);
+}
+
+.vermietungBilder {
+	display: block;
+}
