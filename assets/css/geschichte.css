@@ -9,3 +9,11 @@
 h2 {
     margin-top: 40px;
 }
+
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: none;
+    column-rule: dotted 1px #333;
+  }
