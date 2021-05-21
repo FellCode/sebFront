@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/gemeinschaftPage.css">
-
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="../assets/JS/index.js"></script>
 </head>
 
@@ -21,16 +20,17 @@
     </nav>
   </header>
 
-  <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <button onclick="goToTop()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
   <section class="hero">
-    <div class="background-image" style="background-image: url(../assets/img/hero.jpg);"></div>
+    <div class="background-image" style="background-image: url(../assets/img/gemeinschaft/Gemeinschaft_Hero.jpg);"></div>
     <div class="hero-content-area">
-      <h3>Unsere Gemeinschaft</h3>
+      <h1>Unsere Gemeinschaft</h1>
     </div>
+    <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
   <section class="gemeinschaft">
-    <h2>Was bedeutet eigentlich „Gemeinschaft“?</h2>
+    <h3 class="title">Was bedeutet eigentlich „Gemeinschaft“?</h2>
     <p>
 
       Dazu gibt es im Internet viele verschiedene Definitionen. Aber im Großen und Ganzen haben alle dieselbe Bedeutung:
@@ -43,6 +43,21 @@
       verbringen eine
       gemeinsame und schöne Zeit zusammen. Auf der anderen Seite besuchen wir andere Schützenfeste von befreundeten
       Schützenbruderschaften.<br />
+      
+      
+    </p>
+  </section>
+  <section class="gemeinschaft gemeinschaftBilder">
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section class="gemeinschaft">
+    <p>
       Dennoch feiern wir auch interne Veranstaltungen, welche für unsere Mitglieder veranstaltet werden. Dabei wird das
       Schützenjahr wird mit dem <strong>Brezelschießen</strong> eingeleitet, geht weiter mit dem eigenen
       <strong>Oktoberfest</strong> und endet mit der
@@ -50,6 +65,23 @@
       Selbstverständlich besteht das Schützensein nicht nur aus Schützenfesten. So besuchen und repräsentieren wir
       unsere Bruderschaft auf verschiedenen Veranstaltungen in Horrem, wie zum Beispiel auf dem Pfarrfest und dem Tag
       des Vereins.<br />
+    </p>
+  </section>
+
+
+
+  <section class="gemeinschaft gemeinschaftBilder">
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
+    </div>
+  </section>
+
+
+  <section class="gemeinschaft">
+    <p>
       Das jährliche <strong>Bundesschützenschützenfest</strong>, welches das letzte „Schützenfest-Highlight“ des Jahres
       ist, verbinden
       wir immer mit einem Ausflug. So reisen wir gemeinschaftlich bereits Freitag zum austragenden Ort und besuchen
@@ -57,9 +89,19 @@
       Aber auch außerhalb des Vereinsleben wird die Gemeinschaft gelebt. Sei es bei der Hilfe eines Umzuges oder
       generell die Hilfe bei täglichen Aufgaben, aber auch das private Treffen untereinander. Auch neben dem
       „Schützenleben“ steht die „Gemeinschaft“ im Vordergrund.
-
     </p>
   </section>
+
+
+  <section class="gemeinschaft gemeinschaftBilder">
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
+    </div>
+  </section>
+
 
   <footer>
     <p>&copy; <a href="http://fellcode.me">Felix Vogel</a></p>

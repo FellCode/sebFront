@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/geschichte.css">
@@ -25,24 +22,24 @@
     </nav>
   </header>
 
-  <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <button onclick="goToTop()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
   <section class="hero">
-    <div class="background-image" style="background-image: url(../assets/img/hero.jpg);"></div>
+    <div class="background-image" style="background-image: url(../assets/img/geschichte/geschichte_hero.jpg);"></div>
     <div class="hero-content-area">
-      <h3>Die Historie unseres Vereins</h3>
+      <h1>Die Historie unseres Vereins</h1>
     </div>
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
 
-  <section class="Geschichte">
-    <h2>Schützengeschichte</h2>
+  <section class="schuetzenGeschichte">
+    <h3 class="title">Schützengeschichte</h3>
     <p>Die alte Schützenkette der St. Sebastianus Schützenbruderschaft aus dem 15. Jahr­hundert mit den Königsschildern
       und dem silbernen Vogel wurde 1872 auf der Gräfl. Rentei des Grafen Berghe von Trips entwendet.<br /><br />
 
       Im Jahre 1873/74 stiftete Herr Reichsgraf Max Berghe von Trips eine neue Königskette mit silbernen Vogel, an der
       folgende Majestäten mit Name benannt sind.</p>
-    <h3>Unsere Schützenkönig/innen bis jetzt</h3>
+    <h3>Unsere Schützenkönig*innen bis jetzt</h3>
     <div class="flex-container">
       <div class="wrap-collabsible">
         <input id="collapsible1" class="toggle" type="checkbox">
@@ -199,7 +196,9 @@
       </div>
     </div>
     <hr>
-    <h2>Schüler -und Jugendgeschichte</h2>
+  </section>
+  <section class="jugendGeschichte">
+    <h3 class="title">Schüler -und Jugendgeschichte</h3>
     <p>In der über 470 Jahre währenden Tradition unserer Bruderschaft hat es immer wieder viele junge Menschen gegeben,
       die aus Begeisterung für den Schießsport aktive Mitglieder wurden. Eine gezielte Jugendarbeit setzte jedoch erst
       nach dem Ende des 2. Weltkrieges mit der Gründung einer Jungschützenabteilung ein. <br /><br />
@@ -226,7 +225,7 @@
       Zimmermann, die Weihnachtsfeier etwas anders zu gestalten, hatten unsere Schützenfrauen in wochenlanger Arbeit mit
       den Schülern das Märchen „Schneewittchen und die neun </p>
 
-    <h3>Unsere Jugendmajestät/innen bis jetzt</h3>
+    <h3>Unsere Jugendmajestät*innen bis jetzt</h3>
     <div class="flex-container">
       <div class="wrap-collabsible">
         <input id="collapsible5" class="toggle" type="checkbox">
@@ -296,7 +295,7 @@
         </div>
       </div>
     </div>
-    <h3>Unsere Schülermajestät/innen bis jetzt</h3>
+    <h3>Unsere Schülermajestät*innen bis jetzt</h3>
     <div class="flex-container">
       <div class="wrap-collabsible">
         <input id="collapsible7" class="toggle" type="checkbox">
@@ -310,6 +309,8 @@
         </div>
       </div>
     </div>
+
+
   </section>
   <footer>
     <p>&copy; <a href="http://fellcode.me">Felix Vogel</a></p>

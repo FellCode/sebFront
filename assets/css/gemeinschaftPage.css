@@ -1,1 +1,13 @@
 @import url("base.css");
+
+.gemeinschaftBilder {
+	display: block;
+}
+
+.gemeinschaft p {
+	font-size: 1.2em;
+}
+
+.gemeinschaft h2{
+	margin-bottom: 20px;
+}

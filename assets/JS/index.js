@@ -25,7 +25,7 @@ function scrollFunction() {
 
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function goToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
@@ -58,27 +58,27 @@ function nextImage() {
 
 
   if (currentImgIndex === 0) {
-    mainText.classList.add("visible")
-    mainText.classList.remove("hidden")
-    summaryText.classList.remove("visible")
-    summaryText.classList.add("hidden")
-    dataText.classList.remove("visible")
-    dataText.classList.add("hidden")
+    mainText.classList.add("visibleFade")
+    mainText.classList.remove("hiddenFade")
+    summaryText.classList.remove("visibleFade")
+    summaryText.classList.add("hiddenFade")
+    dataText.classList.remove("visibleFade")
+    dataText.classList.add("hiddenFade")
 
   } else if (currentImgIndex === 1) {
-    mainText.classList.add("hidden")
-    mainText.classList.remove("visible")
-    summaryText.classList.add("visible")
-    summaryText.classList.remove("hidden")
-    dataText.classList.remove("visible")
-    dataText.classList.add("hidden")
+    mainText.classList.add("hiddenFade")
+    mainText.classList.remove("visibleFade")
+    summaryText.classList.add("visibleFade")
+    summaryText.classList.remove("hiddenFade")
+    dataText.classList.remove("visibleFade")
+    dataText.classList.add("hiddenFade")
   } else {
-    mainText.classList.add("hidden")
-    mainText.classList.remove("visible")
-    summaryText.classList.remove("visible")
-    summaryText.classList.add("hidden")
-    dataText.classList.remove("hidden")
-    dataText.classList.add("visible")
+    mainText.classList.add("hiddenFade")
+    mainText.classList.remove("visibleFade")
+    summaryText.classList.remove("visibleFade")
+    summaryText.classList.add("hiddenFade")
+    dataText.classList.remove("hiddenFade")
+    dataText.classList.add("visibleFade")
   }
 
 }
@@ -95,29 +95,44 @@ function previousImage() {
 
 
   if (currentImgIndex === 0) {
-    mainText.classList.add("visible")
-    mainText.classList.remove("hidden")
-    summaryText.classList.remove("visible")
-    summaryText.classList.add("hidden")
-    dataText.classList.remove("visible")
-    dataText.classList.add("hidden")
+    mainText.classList.add("visibleFade")
+    mainText.classList.remove("hiddenFade")
+    summaryText.classList.remove("visibleFade")
+    summaryText.classList.add("hiddenFade")
+    dataText.classList.remove("visibleFade")
+    dataText.classList.add("hiddenFade")
 
   } else if (currentImgIndex === 1) {
-    mainText.classList.add("hidden")
-    mainText.classList.remove("visible")
-    summaryText.classList.add("visible")
-    summaryText.classList.remove("hidden")
-    dataText.classList.remove("visible")
-    dataText.classList.add("hidden")
+    mainText.classList.add("hiddenFade")
+    mainText.classList.remove("visibleFade")
+    summaryText.classList.add("visibleFade")
+    summaryText.classList.remove("hiddenFade")
+    dataText.classList.remove("visibleFade")
+    dataText.classList.add("hiddenFade")
   } else {
-    mainText.classList.add("hidden")
-    mainText.classList.remove("visible")
-    summaryText.classList.remove("visible")
-    summaryText.classList.add("hidden")
-    dataText.classList.remove("hidden")
-    dataText.classList.add("visible")
+    mainText.classList.add("hiddenFade")
+    mainText.classList.remove("visibleFade")
+    summaryText.classList.remove("visibleFade")
+    summaryText.classList.add("hiddenFade")
+    dataText.classList.remove("hiddenFade")
+    dataText.classList.add("visibleFade")
   }
 
+}
+
+function scrollArrow() {
+  const checkpoint = 300;
+  const currentScroll = window.pageYOffset;
+  const scrollIcon = document.getElementById("scrollIndicator")
+
+  if(scrollIcon === null)
+    return;
+  if (currentScroll <= checkpoint) {
+    opacity = 1 - currentScroll / checkpoint;
+  } else {
+    opacity = 0;
+  }
+  scrollIcon.style.opacity = opacity;
 }
 
 $(function () {

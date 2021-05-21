@@ -1,5 +1,20 @@
 @import url("base.css");
 
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 24px;
+	}
+
+	.hero h3 {
+		font-size: 16px;
+	}
+}
+
 /*Greetings Section */
 
 .socialText {
@@ -167,7 +182,7 @@ section.greetings h3.title {
 	margin: 0 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 	.contact form input {
 		flex-basis: 100%;
 		margin: 0 0 20px 0;
@@ -195,3 +210,70 @@ section.greetings h3.title {
 
 	}
 }
+
+
+/* Contact Form */
+
+#contactform {
+	color: #1f7a1f;
+	transition: 0.3s;
+	opacity: 0.6;
+  }
+  
+  #contactform:hover {
+	opacity: 1;
+	cursor: pointer;
+  }
+  
+  section #contactFormContainer {
+	display: none;
+	border: 6px solid #1f7a1f;
+	border-radius: 7px;
+	padding: 2em;
+	width: 400px;
+	text-align: center;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+  }
+  
+  input,
+  textarea {
+	margin: 0.8em auto;
+	font-family: inherit;
+	text-transform: inherit;
+	font-size: inherit;
+  
+	display: block;
+	width: 280px;
+	padding: 0.4em;
+  }
+  
+  textarea {
+	height: 80px;
+	resize: none;
+  }
+  
+  .formBtn {
+	width: 160px;
+	display: inline-block;
+	background: rgba(31, 122, 31, 0.5);
+	color: #fff;
+	font-weight: 100;
+	font-size: 1.2em;
+	border: none;
+	height: 35px;
+	transition: 0.3s;
+  
+  }
+  
+  .formBtn:hover {
+	opacity: 0.8;
+  }

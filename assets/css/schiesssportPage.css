@@ -1,32 +1,13 @@
 @import url("base.css");
 
-
-section.schiesssport {
-    align-items: flex-start;
-}
-
-section.schiesssport p {
-    max-width: 1000px;
-}
-
-
-
-img {
-    border-radius: 0%;
-    width: 250px;
-    height: 300px;
-    margin: 10px;
-    border: 5px solid;
-    border-color: #1f7a1f70;
-}
-
-hr {
-    align-self: center;
-}
+/* General Styles */
 
 strong {
     display: inline !important;
 }
+
+
+/* Navigation Arrows */
 
 #arr-right {
     position: absolute;
@@ -38,13 +19,6 @@ strong {
 
 }
 
-#arr-right:hover {
-    cursor: pointer
-}
-
-#arr-left:hover {
-    cursor: pointer
-}
 
 #arr-left {
     position: absolute;
@@ -54,6 +28,17 @@ strong {
     border-radius: 5px;
     background-color: rgba(68, 78, 64, 0.8)
 }
+
+#arr-right:hover {
+    cursor: pointer
+}
+
+#arr-left:hover {
+    cursor: pointer
+}
+
+
+/* Text */
 
 .imgText {
     position: absolute;
@@ -69,14 +54,15 @@ strong {
     overflow-y: scroll;
 }
 
+/* Images */
 
-.visible {
+.visibleFade {
     visibility: visible;
     opacity: 1;
     transition: opacity 1s linear;
 }
 
-.hidden {
+.hiddenFade {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 2s, opacity 1s ease;

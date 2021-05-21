@@ -6,14 +6,18 @@
 
 }
 
-h2 {
-    margin-top: 40px;
-}
-
-ul {
+.wrap-collabsible ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     list-style-type: none;
     column-rule: dotted 1px #333;
+  }
+
+  .geschichte h2 {
+      margin-bottom: 20px;
+  }
+
+  .geschichte p {
+      text-align: left;
   }
