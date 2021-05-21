@@ -135,8 +135,12 @@ function scrollArrow() {
   scrollIcon.style.opacity = opacity;
 }
 
+function mobileMenu() {
+  let nav = document.getElementById("nav-menu")
+  nav.classList.toggle("visible");
+}
+
 $(function () {
-  // contact form animations
   $("#contactform").click(function () {
     $("#contactFormContainer").fadeToggle();
   });
@@ -144,10 +148,9 @@ $(function () {
     var container = $("#contactFormContainer");
 
     if (
-      !container.is(e.target) && // if the target of the click isn't the container...
+      !container.is(e.target) &&
       container.has(e.target).length === 0
     ) {
-      // ... nor a descendant of the container
       container.fadeOut();
     }
   });
