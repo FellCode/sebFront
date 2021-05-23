@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/jugendPage.css">
 
+  <link rel="stylesheet" href="../assets/css/jugendPage.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/e23bcb5bcf.js" crossorigin="anonymous"></script>
   <script src="../assets/JS/index.js"></script>
 </head>
 
@@ -27,6 +29,45 @@
       <h1>Unsere Jugend</h1>
     </div>
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
+  </section>
+  <section class="jugendBilder">
+    <h3 class="title">Unsere Jugend in Aktion</h3>
+    <div class="gallery js-flickity"
+    data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
+      <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
+    </div>
+  </section>
+  <section class="overview">
+    <h3 class="title">Ein Überblick was die Jugend bietet</h3>
+    <ul class="grid">
+      <li>
+        <i class="far fa-hourglass fa-4x"></i>
+        <h4>Tradition</h4>
+      </li>
+      <li>
+        <i class="fas fa-route fa-4x"></i>
+        <h4>Ausflüge</h4>
+      </li>
+      <li>
+        <i class="fas fa-calendar-week fa-4x"></i>
+        <h4>Events</h4>
+      </li>
+      <li>
+        <i class="fas fa-hands-helping fa-4x"></i>
+        <h4>Betreuung</h4>
+      </li>
+      <li>
+        <i class="fas fa-crosshairs fa-4x"></i>
+        <h4>Schießsport</h4>
+      </li>
+      <li>
+        <i class="fas fa-info-circle fa-4x"></i>
+        <h4>Informationen für die Eltern</h4>
+      </li>
+    </ul>
+    
   </section>
 
   <footer>

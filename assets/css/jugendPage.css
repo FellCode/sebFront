@@ -1,1 +1,27 @@
 @import url("base.css");
+
+.jugendBilder {
+	display: block;
+}
+
+.grid li i {
+    color: #1f7a1f70;
+}
+
+.grid li {
+	margin: 10px;
+	flex-basis: 15%;
+	text-align: center;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grid li h4 {
+	font-size: 20px;
+	margin: 15px 0;
+}
