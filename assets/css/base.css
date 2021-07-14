@@ -28,6 +28,11 @@ hr {
 	margin-bottom: 50px;
 }
 
+
+.centerHr {
+	margin: 20px auto;
+}
+
 ul,
 nav {
 	list-style: none;
@@ -328,4 +333,22 @@ footer p {
 
 .gallery-cell img {
 	max-width: 100%;
+}
+
+
+.img-right {
+	float: right;
+}
+
+
+.img-left {
+	float: left;
+}
+
+.text-left {
+	text-align:left;
+}
+
+.text-right {
+	text-align:right;
 }

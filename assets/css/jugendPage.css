@@ -4,16 +4,6 @@
 	display: block;
 }
 
-.grid li i {
-    color: #1f7a1f70;
-}
-
-.grid li {
-	margin: 10px;
-	flex-basis: 15%;
-	text-align: center;
-}
-
 .grid {
 	width: 100%;
 	display: flex;
@@ -21,7 +11,37 @@
 	justify-content: center;
 }
 
-.grid li h4 {
-	font-size: 20px;
-	margin: 15px 0;
+.grid li {
+	margin: 10px;
+	flex-basis: 15%;
+	text-align: center;
 }
+.grid li i {
+    color: #1f7a1f70;
+}
+
+.grid li a h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.grid a {
+	color: inherit;
+}
+
+
+.content .quote {
+	line-height: 2;
+	margin: 40px 0 25px;
+	text-align: left;
+}
+
+.content .quote img {
+	width: 200px;
+	height: 200px;
+	border: 5px solid;
+	border-color: #1f7a1f70;
+	margin-right: 10px;
+}
+
+

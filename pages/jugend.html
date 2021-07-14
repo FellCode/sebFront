@@ -30,10 +30,13 @@
     </div>
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
+
+
   <section class="jugendBilder">
     <h3 class="title">Unsere Jugend in Aktion</h3>
+    <hr class="centerHr">
     <div class="gallery js-flickity"
-    data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
       <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung1.jpg" alt=""></div>
       <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung2.jpg" alt=""></div>
       <div class="gallery-cell"><img src="../assets/img/vermietung/vermietung3.jpg" alt=""></div>
@@ -41,33 +44,90 @@
   </section>
   <section class="overview">
     <h3 class="title">Ein Überblick was die Jugend bietet</h3>
+    <hr>
     <ul class="grid">
       <li>
-        <i class="far fa-hourglass fa-4x"></i>
-        <h4>Tradition</h4>
+        <a href="#traditionInfo">
+          <i class="far fa-hourglass fa-4x"></i>
+          <h4>Tradition</h4>
+        </a>
       </li>
       <li>
-        <i class="fas fa-route fa-4x"></i>
-        <h4>Ausflüge</h4>
+        <a href="#ausflugInfo">
+          <i class="fas fa-route fa-4x"></i>
+          <h4>Ausflüge</h4>
+        </a>
       </li>
       <li>
-        <i class="fas fa-calendar-week fa-4x"></i>
-        <h4>Events</h4>
+        <a href="#eventInfo">
+          <i class="fas fa-calendar-week fa-4x"></i>
+          <h4>Events</h4>
+        </a>
       </li>
       <li>
-        <i class="fas fa-hands-helping fa-4x"></i>
-        <h4>Betreuung</h4>
+        <a href="#betreuungInfo">
+          <i class="fas fa-hands-helping fa-4x"></i>
+          <h4>Betreuung</h4>
+        </a>
       </li>
       <li>
-        <i class="fas fa-crosshairs fa-4x"></i>
-        <h4>Schießsport</h4>
+        <a href="#schiessenInfo">
+          <i class="fas fa-crosshairs fa-4x"></i>
+          <h4>Schießsport</h4>
+        </a>
       </li>
       <li>
-        <i class="fas fa-info-circle fa-4x"></i>
-        <h4>Informationen für die Eltern</h4>
+        <a href="#elternInfo">
+          <i class="fas fa-info-circle fa-4x"></i>
+          <h4>Informationen für die Eltern</h4>
+        </a>
       </li>
     </ul>
+
+  </section>
+
+
+  <section class="content">
+    <div id="traditionInfo">
+      <h2>Tradition</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-left" src="../assets/img/main/vorstand.jpg" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="ausflugInfo">
+      <h2 class="text-right">Ausflüge</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-right" src="../assets/img/main/vorstand.jpg" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="eventInfo">
+      <h2>Events</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-left" src="../assets/img/main/vorstand.jpg" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="betreuungInfo">
+      <h2 class="text-right">Betreuung</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-right" src="../assets/img/main/vorstand.jpg" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
     
+    <div id="schiessenInfo">
+      <h2>Schießsport</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-left" src="../assets/img/main/vorstand.jpg" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="elternInfo">
+      <h2 class="text-right"> Informationen für die Eltern</h2>
+      <p class="quote"><img alt="Brudermeister" class="img-right" src="../assets/img/main/vorstand.jpg" />
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Für detaillierte Informationen könnt ihr <a href="../assets/PDF/test.pdf">hier</a> klicken
+      </p>
+    </div>
   </section>
 
   <footer>

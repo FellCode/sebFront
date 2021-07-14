@@ -45,9 +45,6 @@ section.greetings h3.title {
 	display: block;
 }
 
-.center {
-	margin: 20px auto;
-}
 
 /*about Section*/
 
@@ -129,16 +126,6 @@ section.greetings h3.title {
 		font-size: 14px;
 	}
 }
-
-.img-right {
-	float: right;
-}
-
-
-.img-left {
-	float: left;
-}
-
 
 #erwVorstand {
 	font-size: 22px;
