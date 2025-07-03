@@ -42,8 +42,6 @@ function myFunction() {
 
 
 function nextImage() {
-
-
   let backgroundImage = document.getElementById("schiessSportImg");
   let mainText = document.getElementById("mainText");
   let summaryText = document.getElementById("summaryText");
@@ -85,6 +83,9 @@ function nextImage() {
 
 
 function previousImage() {
+  let mainText = document.getElementById("mainText");
+  let summaryText = document.getElementById("summaryText");
+  let dataText = document.getElementById("dataText");
   var backgroundImage = document.getElementById("schiessSportImg");
 
   currentImgIndex--;
@@ -124,6 +125,7 @@ function scrollArrow() {
   const checkpoint = 300;
   const currentScroll = window.pageYOffset;
   const scrollIcon = document.getElementById("scrollIndicator")
+  let opacity;
 
   if(scrollIcon === null)
     return;
@@ -141,11 +143,11 @@ function mobileMenu() {
 }
 
 $(function () {
-  $("#contactform").click(function () {
+  $("#contactform").on("click", function () {
     $("#contactFormContainer").fadeToggle();
   });
-  $(document).mouseup(function (e) {
-    var container = $("#contactFormContainer");
+  $(document).on("mouseup",function (e) {
+    let container = $("#contactFormContainer");
 
     if (
       !container.is(e.target) &&

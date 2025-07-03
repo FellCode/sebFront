@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Die Vereinsseite der Sankt Sebastianus Schuetzenbruderschaft in Kerpen Horrem
+    mit Informationen rund um den Alltag und Angeboten der Bruderschaft">
   <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="assets/css/frontPage.css">
+  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
 
   <!--  JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://kit.fontawesome.com/e23bcb5bcf.js" crossorigin="anonymous"></script>
   <script src="assets/JS/index.js"></script>
 </head>
 
@@ -22,9 +25,9 @@
   <button onclick="goToTop()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
   <header>
     <div class="titleContainer">
-      <a id="burgermenu" onclick="mobileMenu()" class="icon">
+      <span id="burgermenu" onclick="mobileMenu()" class="icon">
         <i class="fa fa-bars"></i>
-      </a>
+      </span>
     </div>
     <nav id="nav-menu">
       <li><strong><a href="#about">Über uns</a></strong></li>
@@ -37,13 +40,13 @@
   </header>
 
   <section class="hero">
-    <div class="background-image" style="background-image: url(assets/img/main/hero.jpg);"></div>
+    <div class="background-image" style="background-image: url(assets/img/main/hero.webp);"></div>
     <div class="hero-content-area">
       <h3>Willkommen bei der</h3>
       <h1>St. Sebastianus Schützenbruderschaft Horrem<br> seit 1550 e.V.</h1>
     </div>
-    <h4 class="socialText">Besuch uns auch auf: <a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/"
-        target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-instagram "></i></a>
+    <h4 class="socialText">Besuch uns auch auf: <a  aria-label="Facebook" href="https://www.facebook.com/StSebSchutzenbruderschaftSeit1550Ev/"
+        target="_blank"><i class="fab fa-facebook-square"></i></a> <a  aria-label="Instagram" href="https://www.instagram.com/sebhorrem/"><i class="fab fa-instagram fa-2x"></i></a>
       </li>
     </h4>
 
@@ -122,15 +125,11 @@
     <hr class="centerHr">
 
     <div class="gallery js-flickity"
-      data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay": 6000}'>
-      <div class="gallery-cell"><img src="assets/img/main/impression2.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression1.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression3.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression4.jpg" alt=""></div>
-    </div>
-    <div>
-      <p class="center">Weitere Bilder findest und auf unserem <a target="_blank"
-          href="https://www.instagram.com">Instagram</a></p>
+      data-flickity-options='{"wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay": 6000}'>
+      <div class="gallery-cell"><img src="assets/img/main/impression2.webp" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression1.webp" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression3.webp" alt=""></div>
+      <div class="gallery-cell"><img src="assets/img/main/impression4.webp" alt=""></div>
     </div>
   </section>
 
@@ -138,7 +137,7 @@
     <h3 class="title">Unser Vorstand</h3>
     <hr>
 
-    <p class="quote"><img alt="Brudermeister" class="img-left" src="./assets/img/main/vorstand.jpg" />Bacon ipsum dolor
+    <p class="quote"><img alt="Brudermeister" class="img-left" src="./assets/img/main/vorstand.webp" />Bacon ipsum dolor
       amet sausage sint brisket dolore
       frankfurter cow. Cillum labore aute beef ribs cupim irure qui swine frankfurter commodo pastrami chicken dolore
       andouille landjaeger. Prosciutto consectetur enim sausage pork nostrud buffalo ipsum. Chicken labore flank
@@ -146,20 +145,20 @@
       Frankfurter hamburger ut turducken.</p>
     <p class="author">- Michael Weuffel, Brudermeister</p>
     <p class="quote"><img alt="Stellvertretender Brudermeister" class="img-right"
-        src="./assets/img/main/vorstand.jpg" />BBacon ipsum dolor amet sausage sint brisket dolore
+        src="./assets/img/main/vorstand.webp" />BBacon ipsum dolor amet sausage sint brisket dolore
       frankfurter cow. Cillum labore aute beef ribs cupim irure qui swine frankfurter commodo pastrami chicken dolore
       andouille landjaeger. Prosciutto consectetur enim sausage pork nostrud buffalo ipsum. Chicken labore flank
       eiusmod brisket. Incididunt ut chicken, turducken short ribs officia pastrami porchetta pariatur tail.
       Frankfurter hamburger ut turducken.</p>
     <p class="author">- Christian Kurm, Stellvertretender Brudermeister</p>
-    <p class="quote"><img alt="Geschäftsführer" class="img-left" src="./assets/img/main/mike.jpg" />BBacon ipsum
+    <p class="quote"><img alt="Geschäftsführer" class="img-left" src="./assets/img/main/mike.webp" />BBacon ipsum
       dolor amet sausage sint brisket dolore
       frankfurter cow. Cillum labore aute beef ribs cupim irure qui swine frankfurter commodo pastrami chicken dolore
       andouille landjaeger. Prosciutto consectetur enim sausage pork nostrud buffalo ipsum. Chicken labore flank
       eiusmod brisket. Incididunt ut chicken, turducken short ribs officia pastrami porchetta pariatur tail.
       Frankfurter hamburger ut turducken.</p>
     <p class="author">- Mike Callsen, Geschäftsführer</p>
-    <p class="quote"><img alt="Schatzmeister" class="img-right" src="./assets/img/main/daniel.jpg" />BBacon ipsum
+    <p class="quote"><img alt="Schatzmeister" class="img-right" src="./assets/img/main/daniel.webp" />BBacon ipsum
       dolor amet sausage sint brisket dolore
       frankfurter cow. Cillum labore aute beef ribs cupim irure qui swine frankfurter commodo pastrami chicken dolore
       andouille landjaeger. Prosciutto consectetur enim sausage pork nostrud buffalo ipsum. Chicken labore flank
@@ -169,7 +168,7 @@
 
     <ul id="erwVorstand">
       <li><strong>Schießmeister/in:</strong> Anne Vogel, Rolf Vogel, Heinrich Bock</li>
-      <li><strong>Jungenschützenmeister/in:</strong> Anne Vogel</li>
+      <li><strong>Jungschützenmeister/in:</strong> Anne Vogel</li>
       <li><strong>Fähnrich:</strong> Oliver Meusch-Weuffel, Felix Vogel, Daniel Weuffel</li>
       <li><strong>Kommandant: </strong>Christian Kurm, Ilija Grasic</li>
       <li><strong>Stellvertr. Geschäftsführer/in:</strong> Nicole Kasten</li>
@@ -198,9 +197,9 @@
     <hr>
     <div id="contactFlexContainer">
       <div id="contactData">
+        <h2>Unsere Öffnungszeiten:</h2>
+        <br />
         <ul class="openList">
-          <h3>Unsere Öffnungszeiten:</h3>
-          <br />
           <li>Montag: Ab 18 Uhr</li>
           <li>Dienstag: 18-20 Uhr</li>
           <li>Donnerstag: 18-20 Uhr</li>
@@ -208,16 +207,16 @@
         <h3 id="address">Mittelstraße 58 50169 Kerpen <br />
           (Zufahrt über Hauptstra&szlig;e 217)</h3>
       </div>
-      <iframe id="map" loading="lazy" allowfullscreen
+      <iframe title="Google Maps Vereinsheim Adresse" id="map" loading="lazy" allowfullscreen
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw1g8LM44v0cRlhApYc6y-5Q&key=AIzaSyDAiqLybnKBAysBPqQ4CUfyYD3GkGVzp-M"></iframe>
     </div>
   </section>
   <footer>
     <p>&copy; <a href="http://fellcode.me">Felix Vogel</a></p>
     <ul>
-      <li><a href="https://www.facebook.com/StSebSchutzenbruderschaftVor1550Ev/" target="_blank"><i
+      <li><a aria-label="Facebook" href="https://www.facebook.com/StSebSchutzenbruderschaftSeit1550Ev/" target="_blank"><i
             class="fab fa-facebook-square fa-2x"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+      <li><a aria-label="Instagram" href="https://www.instagram.com/sebhorrem/"><i class="fab fa-instagram fa-2x"></i></a></li>
     </ul>
   </footer>
 </body>

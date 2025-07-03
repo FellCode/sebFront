@@ -1,6 +1,20 @@
 @import url("base.css");
 
 
+/* Step 1: Common Properties: All required to make icons render reliably */
+.icon::before {
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Step 2: Reference Individual Icons */
+.login::before {
+	font: var(--fa-font-solid);
+	content: "\f007";
+}
+
+
 @media (max-width: 800px) {
 	.hero {
 		min-height: 600px;
