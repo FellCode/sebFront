@@ -19,6 +19,22 @@
           crossorigin="anonymous"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="assets/JS/index.js"></script>
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault(); // Verhindert das Springen zum Link
+      const parent = event.target.closest('.has-dropdown');
+      parent.classList.toggle('open');
+    }
+
+    // Optional: Dropdowns schließen, wenn man woanders klickt
+    document.addEventListener('click', function (event) {
+      document.querySelectorAll('.has-dropdown').forEach((dropdown) => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('open');
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -30,12 +46,49 @@
       </span>
     </div>
     <nav id="nav-menu">
-      <li><strong><a href="#about">Über uns</a></strong></li>
-      <li><strong><a href="#eindruecke">Eindrücke</a></strong></li>
-      <li><strong><a href="#vorstand">Vorstand</a></strong></li>
-      <li><strong><a href="#contact">Kontakt</a></strong></li>
-      <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
-      <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Home<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/where.html">Wo findet ihr uns</a></li>
+            <li><a href="/pages/socials.html">Socials</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Aktuelles<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/majestaeten.html">Aktuelle Majestäten</a></li>
+          </ul>
+        </li>
+        <li><strong><a href="/pages/termine.html">Termine</a></strong></li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Der Verein<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/vorstand.html">Vorstand</a></li>
+            <li><a href="/pages/schiesssport.html">Schießsport</a></li>
+            <li><a href="/pages/jugend.html">Schützenjugend</a></li>
+            <li><a href="/pages/vermietung.html">Heim + Vermietung</a></li>
+          </ul>
+        </li>
+        <li><strong><a href="/pages/infos.html">Infos</a></strong></li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Chronik<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/chroniken_masjestaeten.html">Aktuelle Majestäten</a></li>
+            <li><a href="/pages/chroniken_bezirk.html">Beezirksmajestäten</a></li>
+          </ul>
+        </li>
+        <li><strong><a href="/pages/galerie.html">Galerie</a></strong></li>
+
+     <!-- <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
+      <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li> -->
     </nav>
   </header>
 
@@ -44,12 +97,9 @@
     <div class="hero-content-area">
       <h3>Willkommen bei der</h3>
       <h1>St. Sebastianus Schützenbruderschaft Horrem<br> seit 1550 e.V.</h1>
+      <button>Hier findest du uns</button>
+      <button>Socials</button>
     </div>
-    <h4 class="socialText">Besuch uns auch auf: <a  aria-label="Facebook" href="https://www.facebook.com/StSebSchutzenbruderschaftSeit1550Ev/"
-        target="_blank"><i class="fab fa-facebook-square"></i></a> <a  aria-label="Instagram" href="https://www.instagram.com/sebhorrem/"><i class="fab fa-instagram fa-2x"></i></a>
-      </li>
-    </h4>
-
     <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
   </section>
 
@@ -66,74 +116,13 @@
       <span class="bigQuote"><strong><em><br />„Für Glaube, Sitte und Heimat“</em></strong></span><br />stehen wird.<br /> <br />
 
       Nun aber erstmal genug der Geschichte und unserer Grundsätze. Wir wünschen Dir viel Spaß beim Stöbern auf unserer
-      digitalen Visitenkarte.
+      digitalen Visitenkarte.<br />
+      Unser Kontakt: <a href="mailto:kontakt@seb-horrem.de">kontakt@seb-horrem.de</a>
+    </p>
   </section>
 
-  <section class="about" id="about">
-    <h3 class="title">Über uns</h3>
-    <p>Bei uns gibt eine ganze Reihe von Aktivitäten und Aufgaben. Hier findest du einen Ausschnitt davon was wir alles
-      bieten können <br /><br />
-      <hr>
-      <ul class="grid">
-        <li>
-          <a href="./pages/gemeinschaft.html">
-            <i class="fa fa-users fa-4x"></i>
-            <h4>Gemeinschaft</h4>
-            <p>Gemeinsam zusammen sitzen, Aufgaben bewältigen oder einfach nur trainieren. Gemeinschaft wird bei uns
-              groß
-              geschrieben</p>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/geschichte.html">
-            <i class="fa fa-crown fa-4x"></i>
-            <h4>Geschichte</h4>
-            <p>Das Jahr bietet nicht nur das eigene Schützenfest sondern auch viele andere Veranstaltungen. Ihr könnt
-              aktiv
-              daran teilnehmen und viel Spaß dabei haben!</p>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/schiesssport.html">
-            <i class="fa fa-crosshairs fa-4x"></i>
-            <h4>Sportschießen</h4>
-            <p>Ob Luftgewehr, Kleinkaliber, Pistole oder das Lasergewehr für die Kinder. Es ist für alle was dabei.</p>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/jugend.html">
-            <i class="fa fa-child fa-4x"></i>
-            <h4>Jugend</h4>
-            <p>Auch für die jungen Menschen haben wir viel zu bieten. Neben dem Sportschießen organisieren wir noch
-              diverse Ausflüge, bieten Betreuung und Unterstützung an, und bringen näher, Verantwortung zu übernehmen
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/vermietung.html">
-            <i class="fa fa-home fa-4x"></i>
-            <h4>Vermietung</h4>
-            <p>Unser Heim kann man mieten!</p>
-          </a>
 
-        </li>
-      </ul>
-  </section>
-
-  <section class="eindruecke" id="eindruecke">
-    <h3 class="title">Eindrücke unseres Alltags:</h3>
-    <hr class="centerHr">
-
-    <div class="gallery js-flickity"
-      data-flickity-options='{"wrapAround": true, "pageDots": false, "prevNextButtons": true, "autoPlay": 6000}'>
-      <div class="gallery-cell"><img src="assets/img/main/impression2.webp" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression1.webp" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression3.webp" alt=""></div>
-      <div class="gallery-cell"><img src="assets/img/main/impression4.webp" alt=""></div>
-    </div>
-  </section>
-
-  <section class="vorstand" id="vorstand">
+  <!--<section class="vorstand" id="vorstand">
     <h3 class="title">Unser Vorstand</h3>
     <hr>
 
@@ -174,27 +163,9 @@
       <li><strong>Stellvertr. Geschäftsführer/in:</strong> Nicole Kasten</li>
       <li><strong>Stellvertr. Schatzmeister/in: </strong>-</li>
     </ul>
-  </section>
+  </section> -->
 
-  <section class="contact" id="contact">
-    <h3 class="title">Mehr Erfahren?</h3>
-    <p>Wenn du mehr erfahren möchtest, schreib uns <span id="contactform">hier</span> eine Nachricht oder komm einfach
-      vorbei!</p>
-    <div id="contactFormContainer">
-
-      <h1>Schreib uns!</h1>
-      <small>Wir antworten dir so schnell wie möglich.</small>
-
-      <form enctype="text/plain" method="post" action="mailto:kontakt@seb-horrem.de?subject=Kontakt">
-        <input placeholder="Name" type="text" name="Name" required />
-        <input placeholder="Email" type="email" name="Mail" required />
-        <input placeholder="Betreff" type="text" name="Betreff" required />
-        <textarea placeholder="Nachricht" name="Nachricht"></textarea>
-        <input class="formBtn" type="submit" />
-        <input class="formBtn" type="reset" />
-      </form>
-    </div>
-    <hr>
+  <!--<section class="contact" id="contact">
     <div id="contactFlexContainer">
       <div id="contactData">
         <h2>Unsere Öffnungszeiten:</h2>
@@ -207,17 +178,27 @@
         <h3 id="address">Mittelstraße 58 50169 Kerpen <br />
           (Zufahrt über Hauptstra&szlig;e 217)</h3>
       </div>
-      <iframe title="Google Maps Vereinsheim Adresse" id="map" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw1g8LM44v0cRlhApYc6y-5Q&key=AIzaSyDAiqLybnKBAysBPqQ4CUfyYD3GkGVzp-M"></iframe>
+    </div>
+  </section> -->
+  <section class="lastEvent">
+    <div class="content-left">
+      <h1>Schützenfest 2025</h1>
+      <h3 style="margin-bottom: 15px">Vom 30.05 bis 01.06 haben wir unser Frühlingsfest und unser Schützenfest <br /> mit euch gefeiert.<br />
+      Bilder dazu findet ihr in unserer Galerie</h3>
+      <button>Zu den Bildern</button>
+
+
+    </div>
+    <div class="content-right">
+      <img alt="Plakat" class="img-right" src="./assets/img/main/vorstand.webp" />
     </div>
   </section>
   <footer>
-    <p>&copy; <a href="http://fellcode.me">Felix Vogel</a></p>
-    <ul>
-      <li><a aria-label="Facebook" href="https://www.facebook.com/StSebSchutzenbruderschaftSeit1550Ev/" target="_blank"><i
-            class="fab fa-facebook-square fa-2x"></i></a></li>
-      <li><a aria-label="Instagram" href="https://www.instagram.com/sebhorrem/"><i class="fab fa-instagram fa-2x"></i></a></li>
-    </ul>
+    <p><a href="/pages/impressum.html" target="_blank">Impressum</a></p>
+    <p><a href="/pages/datenschutz.html" target="_blank">Datenschutz</a></p>
+    <!-- <p><a href="http://fellcode.me">Cookies-Einstellungen</a></p> -->
+
+
   </footer>
 </body>
 
