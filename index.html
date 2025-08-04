@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Die Vereinsseite der Sankt Sebastianus Schuetzenbruderschaft in Kerpen Horrem
+    mit Informationen rund um den Alltag und Angeboten der Bruderschaft"
+    />
+    <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Die Vereinsseite der Sankt Sebastianus Schuetzenbruderschaft in Kerpen Horrem
-    mit Informationen rund um den Alltag und Angeboten der Bruderschaft">
-  <title>St.Sebastianus Schützenbruderschaft Horrem seit 1550 e.V.</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/frontPage.css" />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="assets/css/frontPage.css">
-  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <!--  JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/JS/index.js"></script>
+    <script>
+      function toggleDropdown(event) {
+        event.preventDefault(); // Verhindert das Springen zum Link
+        const parent = event.target.closest(".has-dropdown");
+        parent.classList.toggle("open");
+      }
 
-  <!--  JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"
-          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-          crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="assets/JS/index.js"></script>
-  <script>
-    function toggleDropdown(event) {
-      event.preventDefault(); // Verhindert das Springen zum Link
-      const parent = event.target.closest('.has-dropdown');
-      parent.classList.toggle('open');
-    }
-
-    // Optional: Dropdowns schließen, wenn man woanders klickt
-    document.addEventListener('click', function (event) {
-      document.querySelectorAll('.has-dropdown').forEach((dropdown) => {
-        if (!dropdown.contains(event.target)) {
-          dropdown.classList.remove('open');
-        }
+      // Optional: Dropdowns schließen, wenn man woanders klickt
+      document.addEventListener("click", function (event) {
+        document.querySelectorAll(".has-dropdown").forEach((dropdown) => {
+          if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("open");
+          }
+        });
       });
-    });
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <button onclick="goToTop()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-  <header>
-    <div class="titleContainer">
-      <span id="burgermenu" onclick="mobileMenu()" class="icon">
-        <i class="fa fa-bars"></i>
-      </span>
-    </div>
-    <nav id="nav-menu">
+  <body>
+    <button onclick="goToTop()" id="backToTopBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <header>
+      <div class="titleContainer">
+        <span id="burgermenu" onclick="mobileMenu()" class="icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </div>
+      <nav id="nav-menu">
         <li class="has-dropdown">
           <strong>
             <a>Home<span class="arrow">&#9662;</span></a>
@@ -63,7 +72,9 @@
             <li><a href="/pages/majestaeten.html">Aktuelle Majestäten</a></li>
           </ul>
         </li>
-        <li><strong><a href="/pages/termine.html">Termine</a></strong></li>
+        <li>
+          <strong><a href="/pages/termine.html">Termine</a></strong>
+        </li>
         <li class="has-dropdown">
           <strong>
             <a>Der Verein<span class="arrow">&#9662;</span></a>
@@ -75,54 +86,82 @@
             <li><a href="/pages/vermietung.html">Heim + Vermietung</a></li>
           </ul>
         </li>
-        <li><strong><a href="/pages/infos.html">Infos</a></strong></li>
+        <li>
+          <strong><a href="/pages/infos.html">Infos</a></strong>
+        </li>
         <li class="has-dropdown">
           <strong>
             <a>Chronik<span class="arrow">&#9662;</span></a>
           </strong>
           <ul class="dropdown">
-            <li><a href="/pages/chroniken_masjestaeten.html">Aktuelle Majestäten</a></li>
-            <li><a href="/pages/chroniken_bezirk.html">Beezirksmajestäten</a></li>
+            <li>
+              <a href="/pages/chroniken_masjestaeten.html"
+                >Aktuelle Majestäten</a
+              >
+            </li>
+            <li>
+              <a href="/pages/chroniken_bezirk.html">Beezirksmajestäten</a>
+            </li>
           </ul>
         </li>
-        <li><strong><a href="/pages/galerie.html">Galerie</a></strong></li>
+        <li>
+          <strong><a href="/pages/galerie.html">Galerie</a></strong>
+        </li>
 
-     <!-- <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
+        <!-- <li><strong><a target="_blank" href="./pages/impressum.html">Impressum</a></strong></li>
       <li><strong><a target="_blank" href="./pages/datenschutz.html">Datenschutz</a></strong></li> -->
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <section class="hero">
-    <div class="background-image" style="background-image: url(assets/img/main/hero.webp);"></div>
-    <div class="hero-content-area">
-      <h3>Willkommen bei der</h3>
-      <h1>St. Sebastianus Schützenbruderschaft Horrem<br> seit 1550 e.V.</h1>
-      <button>Hier findest du uns</button>
-      <button>Socials</button>
-    </div>
-    <span id="scrollIndicator" class="bottom-center"><i class="fas fa-arrow-down fa-2x"></i></span>
-  </section>
+    <section class="hero">
+      <div
+        class="background-image"
+        style="background-image: url(assets/img/main/hero.webp)"
+      ></div>
+      <div class="hero-content-area">
+        <h3>Willkommen bei der</h3>
+        <h1>
+          St. Sebastianus Schützenbruderschaft Horrem<br />
+          seit 1550 e.V.
+        </h1>
+        <button>Hier findest du uns</button>
+        <button>Socials</button>
+      </div>
+      <span id="scrollIndicator" class="bottom-center"
+        ><i class="fas fa-arrow-down fa-2x"></i
+      ></span>
+    </section>
 
-  <section class="greetings" id="greetings">
-    <h3 class="title">Herzlich Willkommen bei den St. Sebastianus Schützen</h3>
-    <p>
+    <section class="layout-column" id="greetings">
+      <h3 class="title">
+        Herzlich Willkommen bei den St. Sebastianus Schützen
+      </h3>
+      <p>
+        Wir freuen uns, dass du den Weg zu uns gefunden hast und für dein
+        Interesse an unserer Bruderschaft. Nachfolgend wollen wir dir einen
+        Überblick über unsere Bruderschaft, unserer tollen Gemeinschaft, unsere
+        Feste und Veranstaltungen sowie unserem Hobby, dem Schießsport geben.<br />
+        <br />
 
-      Wir freuen uns, dass du den Weg zu uns gefunden hast und für dein Interesse an unserer Bruderschaft. Nachfolgend
-      wollen wir dir einen Überblick über unsere Bruderschaft, unserer tollen Gemeinschaft, unsere Feste und
-      Veranstaltungen sowie unserem Hobby, dem Schießsport geben.<br /> <br />
+        Die Geschichte zeigt, dass sich das Schützenwesen in unserer Heimat
+        immer wieder den Herausforderungen der Zeit gestellt hat und in Treue
+        und Verantwortung auch künftig zu unseren Idealen
+        <span class="bigQuote"
+          ><strong
+            ><em><br />„Für Glaube, Sitte und Heimat“</em></strong
+          ></span
+        ><br />stehen wird.<br />
+        <br />
 
-      Die Geschichte zeigt, dass sich das Schützenwesen in unserer Heimat immer wieder den Herausforderungen der Zeit
-      gestellt hat und in Treue und Verantwortung auch künftig zu unseren Idealen
-      <span class="bigQuote"><strong><em><br />„Für Glaube, Sitte und Heimat“</em></strong></span><br />stehen wird.<br /> <br />
+        Nun aber erstmal genug der Geschichte und unserer Grundsätze. Wir
+        wünschen Dir viel Spaß beim Stöbern auf unserer digitalen
+        Visitenkarte.<br />
+        Unser Kontakt:
+        <a href="mailto:kontakt@seb-horrem.de">kontakt@seb-horrem.de</a>
+      </p>
+    </section>
 
-      Nun aber erstmal genug der Geschichte und unserer Grundsätze. Wir wünschen Dir viel Spaß beim Stöbern auf unserer
-      digitalen Visitenkarte.<br />
-      Unser Kontakt: <a href="mailto:kontakt@seb-horrem.de">kontakt@seb-horrem.de</a>
-    </p>
-  </section>
-
-
-  <!--<section class="vorstand" id="vorstand">
+    <!--<section class="vorstand" id="vorstand">
     <h3 class="title">Unser Vorstand</h3>
     <hr>
 
@@ -165,7 +204,7 @@
     </ul>
   </section> -->
 
-  <!--<section class="contact" id="contact">
+    <!--<section class="contact" id="contact">
     <div id="contactFlexContainer">
       <div id="contactData">
         <h2>Unsere Öffnungszeiten:</h2>
@@ -180,29 +219,38 @@
       </div>
     </div>
   </section> -->
-  <section class="lastEvent">
-    <div class="content-left">
-      <h1>Schützenfest 2025</h1>
-      <h3 style="margin-bottom: 15px">Vom 30.05 bis 01.06 haben wir unser Frühlingsfest und unser Schützenfest <br /> mit euch gefeiert.<br />
-      Bilder dazu findet ihr in unserer Galerie</h3>
-      <button>Zu den Bildern</button>
-
-
-    </div>
-    <div class="content-right">
-      <img alt="Plakat" class="img-right" src="./assets/img/main/vorstand.webp" />
-    </div>
-  </section>
-  <footer>
-    <p><a href="/pages/impressum.html" target="_blank">Impressum</a></p>
-    <p><a href="/pages/datenschutz.html" target="_blank">Datenschutz</a></p>
-    <!-- <p><a href="http://fellcode.me">Cookies-Einstellungen</a></p> -->
-
-
-  </footer>
-</body>
-
-<script>
-</script>
-
+    <section class="layout-column">
+      <h3 class="title">Anstehende Veranstaltungen</h3>
+      <ul class="events">
+        <li>
+          <span class="date">07.09.2025</span> -
+          <span class="event">Herbstfest</span>
+        </li>
+      </ul>
+    </section>
+    <section class="layout-row">
+      <div class="content-left">
+        <h1>Schützenfest 2025</h1>
+        <h3 style="margin: 1rem 0 1rem 0">
+          Vom 30.05 bis 01.06 haben wir unser Frühlingsfest und unser
+          Schützenfest <br />
+          mit euch gefeiert.<br />
+          Bilder dazu findet ihr in unserer Galerie
+        </h3>
+        <button>Zu den Bildern</button>
+      </div>
+      <div class="content-right">
+        <img
+          alt="Plakat"
+          class="img-right"
+          src="./assets/img/main/vorstand.webp"
+        />
+      </div>
+    </section>
+    <footer>
+      <p><a href="/pages/impressum.html" target="_blank">Impressum</a></p>
+      <p><a href="/pages/datenschutz.html" target="_blank">Datenschutz</a></p>
+      <!-- <p><a href="http://fellcode.me">Cookies-Einstellungen</a></p> -->
+    </footer>
+  </body>
 </html>

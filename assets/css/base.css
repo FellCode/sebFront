@@ -122,9 +122,16 @@ a.btn {
 
 section {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	padding: 100px 80px;
+}
+
+section.layout-column {
+	flex-direction: column;
+}
+
+section.layout-row {
+	flex-direction: row;
 }
 
 section:not(.hero):nth-child(even) {
@@ -136,7 +143,6 @@ section:not(.hero):nth-child(odd) {
 }
 
 section h3.title {
-	text-transform: capitalize;
 	font: bold 32px "Open Sans", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;

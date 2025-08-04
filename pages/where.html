@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-
-</body>
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="titleContainer">
+        <span id="burgermenu" onclick="mobileMenu()" class="icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </div>
+      <nav id="nav-menu">
+        <li class="has-dropdown">
+          <strong>
+            <a>Home<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/where.html">Wo findet ihr uns</a></li>
+            <li><a href="/pages/socials.html">Socials</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Aktuelles<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/majestaeten.html">Aktuelle Majestäten</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong><a href="/pages/termine.html">Termine</a></strong>
+        </li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Der Verein<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li><a href="/pages/vorstand.html">Vorstand</a></li>
+            <li><a href="/pages/schiesssport.html">Schießsport</a></li>
+            <li><a href="/pages/jugend.html">Schützenjugend</a></li>
+            <li><a href="/pages/vermietung.html">Heim + Vermietung</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong><a href="/pages/infos.html">Infos</a></strong>
+        </li>
+        <li class="has-dropdown">
+          <strong>
+            <a>Chronik<span class="arrow">&#9662;</span></a>
+          </strong>
+          <ul class="dropdown">
+            <li>
+              <a href="/pages/chroniken_masjestaeten.html"
+                >Aktuelle Majestäten</a
+              >
+            </li>
+            <li>
+              <a href="/pages/chroniken_bezirk.html">Beezirksmajestäten</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong><a href="/pages/galerie.html">Galerie</a></strong>
+        </li>
+      </nav>
+    </header>
+    <section class="layout-column" id="greetings">
+      <h3 class="title">Wo findet ihr uns?</h3>
+      <h2>Mittelstraße 58, 50169 Kerpen</h2>
+      <p>
+        Beachtet bitte, das die einfachste Zufahrt über die Hauptstraße 217 in
+        Horrem zu finden ist. Dort befindet sich auch der Parkplatz, auf dem ihr
+        euer Auto abstellen könnt. Von dort aus sind es nur wenige Schritte bis
+        zu unserem Schützenheim. Wir sind sehr gut zu Fuß, mit dem Fahrrad, dem
+        Bus oder dem Auto zu erreichen. Der Bahnhof Horrem ist nur wenige
+        Gehminuten entfernt und bietet eine gute Anbindung an den öffentlichen
+        Nahverkehr. An der Straße befindet sich die Bushaltestelle "Horrem
+        Markt", die regelmäßig angefahren wird.<br />
+        <br />
+        <strong>Hinweis: </strong><br />
+        Bei größeren Veranstaltungen kann es zu Einschränkungen bei der
+        Parkplatzsituation kommen. Wir empfehlen daher, wenn möglich, die
+        Nutzung anderer Parkflächen oder eine alternative Anreisemöglichkeit.
+      </p>
+    </section>
+    <section class="layout-column">
+      <h3 class="title">Eine grobe Anfahrtsskizze</h3>
+      <img
+        style="max-width: 800px; border: 1px solid #ccc; border-radius: 5px"
+        src="/assets/img/anfahrt.png"
+        alt="Anfahrtsskizze"
+      />
+      <p>
+        <strong>Hinweis:</strong> Aus Datenschutzgründen verzichten wir auf das
+        Einbinden einer interaktiven Karte. Anhand unseres Namens sind wir aber
+        leicht zu finden.
+      </p>
+    </section>
+  </body>
+  <footer>
+    <p><a href="/pages/impressum.html" target="_blank">Impressum</a></p>
+    <p><a href="/pages/datenschutz.html" target="_blank">Datenschutz</a></p>
+    <!-- <p><a href="http://fellcode.me">Cookies-Einstellungen</a></p> -->
+  </footer>
 </html>
